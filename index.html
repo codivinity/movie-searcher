@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <script src="https://kit.fontawesome.com/1a4dd4a998.js" crossorigin="anonymous"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>movie searcher</title>
+</head>
+
+<body>
+
+    <main>
+        <div class="container">
+            <div class="list">
+                <section class="movie-grid">
+                    <article class="movie-card">
+                        <div class="image-container">
+                            <div>
+                                <a href="">
+                                    <img class="movie-image" src="./images/movie-image-1.jpg" alt="movie-image-1">
+                                </a>
+                            </div>
+                            <div class="movie-item__title-in">
+                                <div class="cate">
+                                    <span>
+                                        <a href="#">Sci-fi</a>
+                                    </span>
+                                </div>
+                                <h6 class="movie-item__title-in__heading">
+                                    <a href="#">Interstaller</a>
+                                </h6>
+                                <p>
+                                    <i class="fa-fw fa-md fa-star fa"></i>
+                                    <span>7.4</span>
+                                    /10
+                                </p>
+                            </div>
+                        </div>
+                        <div class="detail-container">
+                            <p class="movie-heading">Interstaller (2015)</p>
+                            <!-- <hr class="hr-text"> -->
+                            <div class="info">
+                                <span>2h 2min | Crime, Drama</span>
+                            </div>
+                            <p class="description">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni dolore similique neque
+                                omnis. Nobis non exercitationem ducimus distinctio perspiciatis odit dicta. Reiciendis
+                                praesentium ex, ducimus beatae non repellat autem! Consequuntur.
+                            </p>
+                            <p class="rate">
+                                Rating: 7.4/10 | Mood: Dark
+                            </p>
+                            <div class="buttons">
+                                <button type="button" class="button"> TRAILER </button>
+                                <button type="button" class="button">IMBD</button>
+                            </div>
+                        </div>
+                    </article>
+                </section>
+            </div>
+            <aside class="sidebar">
+                <section>
+                    <h3>
+                        SEARCH FOR GENRES
+                        <!-- <hr> -->
+                    </h3>
+                    <div class="search-form">
+                        <form onsubmit="submitForm(event)">
+                            <label for="genres">Movie genres:</label>
+                            <input name="genres" type="text" required placeholder="Enter genres ...">
+                            <button type="submit">SEARCH</button>
+                        </form>
+                    </div>
+                </section>
+            </aside>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>
